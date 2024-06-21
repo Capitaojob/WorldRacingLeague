@@ -1,0 +1,252 @@
+.left-right-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-right-container > * {
+    flex-basis: 100%;
+}
+
+.main-info {
+    border-top: 10px solid var(--black);
+    border-right: 10px solid var(--black);
+    border-top-right-radius: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.main-info .main-title {
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.main-info h4 {
+    font-family: var(--secondary-font);
+    margin-top: 5px;
+}
+
+.main-info .next-round-card {
+    border: 1px solid #b4b4b4;
+    border-radius: 8px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.11);
+    width: 300px;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-right: 20px;
+}
+
+.main-info .next-round-card .arrow-down {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-basis: 25%;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 3em;
+}
+
+.main-info .next-round-card .arrow-down div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-info .next-round-card .details {
+    margin: auto;
+}
+
+.main-info .next-round-card .details h3 {
+    color: var(--red);
+}
+
+.main-info .next-round-card .details h2 {
+    font-size: 1.1em;
+}
+
+.races {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1%;
+    margin-top: 40px;
+}
+
+.races .race-card {
+    position: relative;
+    flex-basis: 100%;
+    max-width: calc(90% / 4);
+    border-top: 2px solid var(--black);
+    border-right: 2px solid var(--black);
+    border-top-right-radius: 15px;
+    padding: 10px;
+    margin-top: 30px;
+    transition: 150ms ease all;
+    cursor: pointer;
+    user-select: none;
+}
+
+.races #next-race.race-card {
+    width: 100vw;
+    flex-grow: 1;
+    background-color: var(--gray);
+    color: var(--white);
+}
+
+.races #next-race.race-card .round {
+    text-align: center;
+    width: 100%;
+    left: 0;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 0 10px 0 0;
+    border-top: 2px solid var(--black);
+    border-right: 2px solid var(--black);
+}
+
+.races #next-race.race-card:hover > .round {
+    border-color: var(--red);
+}
+
+.races #next-race.race-card:hover > .round {
+    top: -9px;
+}
+
+.races .race-card:hover {
+    border-color: var(--red);
+}
+
+.race-card .round {
+    position: absolute;
+    height: fit-content;
+    background-color: var(--white);
+    top: -9px;
+    transition: 100ms ease-in all;
+}
+
+.races .race-card:hover > .round {
+    top: -20px;
+}
+
+.race-card .race-info {
+    margin-bottom: 10px;
+}
+
+.race-card .date {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.race-card .month {
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--black);
+    width: fit-content;
+    padding: 1px 10px;
+    border-radius: 4px;
+}
+
+.race-card .country-flag {
+    border: 1px solid var(--black);
+    width: 60px;
+    object-fit: cover;
+    height: 35px;
+    float: right;
+    border-radius: 4px;
+}
+
+.race-card .details {
+    height: 70px;
+}
+
+.race-card .location {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 4px;
+}
+
+.race-card .location span {
+    color: var(--red);
+}
+
+.race-card .description {
+    font-family: var(--secondary-font);
+}
+
+.race-card .race-card-bottom {
+    height: 120px;
+}
+
+.race-card .track-layout {
+    width: 100%;
+    background-color: #ffffff;
+    opacity: 0.8;
+    background-image: linear-gradient(#a3a3a3 0.6px, transparent 0.6px), linear-gradient(to right, #a3a3a3 0.6px, #ffffff 0.6px);
+    background-size: 12px 12px;
+    background-position: -2%;
+}
+
+.race-card .track-layout img,
+.race-card .testing-image img {
+    height: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+}
+
+.race-card .racers {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.race-card .racers > div {
+    position: relative;
+    height: 120px;
+    border-radius: 6px;
+    flex-basis: 100%;
+    font-size: 0.8em;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    overflow: hidden;
+}
+
+.race-card .racers div img {
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+    background-image: repeating-linear-gradient(to right, #000000, #000000 10px, transparent 10px, transparent);
+    background-size: 22px 22px;
+    background-color: #363636;
+    border-radius: 6px 6px 0 0;
+}
+
+.race-card .racers .first img {
+    height: 90%;
+}
+
+.race-card .racers .second img {
+    height: 70%;
+}
+
+.race-card .racers .third img {
+    height: 60%;
+}
+
+.race-card .racers div h5 {
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid var(--light-gray);
+    padding: 5px 0;
+    border: 1px solid var(--light-gray);
+    border-radius: 0 0 6px 6px;
+}

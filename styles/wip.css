@@ -1,0 +1,29 @@
+.wip {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 250px 0;
+}
+
+.wip div h1 {
+    font-size: 3em;
+}
+
+.wip div h2 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.wip div button {
+    background-color: var(--red);
+    border: none;
+    color: var(--white);
+    padding: 15px 23px;
+}
+
+.wip div img {
+    width: 100%;
+    object-fit: cover;
+}
