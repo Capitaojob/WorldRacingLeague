@@ -1,191 +1,212 @@
 .top-image {
-    width: 100%;
-    height: 400px;
+	width: 100%;
+	height: 400px;
 
-    background-image: url("https://i.redd.it/roi6hzsqjtk51.jpg");
+	background-image: url("https://i.redd.it/roi6hzsqjtk51.jpg");
 
-    /* Create the parallax scrolling effect */
-    /* background-attachment: fixed; */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+	/* Create the parallax scrolling effect */
+	/* background-attachment: fixed; */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 
-    margin-top: 70px;
-    filter: brightness(0.3);
-    transition: 300ms ease-in-out all;
-    cursor: cell;
+	margin-top: 70px;
+	filter: brightness(0.3);
+	transition: 300ms ease-in-out all;
+	cursor: cell;
 }
 
 .top-image:hover {
-    filter: none;
+	filter: none;
 }
 
 .tickets .main-info {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    border-bottom: 10px solid var(--red);
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+	border-bottom: 10px solid var(--red);
+	padding-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .tickets .main-info h1 {
-    font-size: 2em;
+	font-size: 2em;
 }
 
 .tickets .main-info p {
-    margin-top: 5px;
+	margin-top: 5px;
 }
 
 .tickets .main-info h4 {
-    font-size: 1.3em;
-    display: block;
+	font-size: 1.3em;
+	display: block;
 }
 
 .tickets .main-info .data {
-    flex-basis: 70%;
+	flex-basis: 70%;
 }
 
 .tickets .main-info .contact {
-    flex-basis: 30%;
+	flex-basis: 30%;
 }
 
 .tickets .main-info .contact .contact-medias {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
 }
 
 .tickets .main-info .contact .side-borders {
-    border-left: 2px solid var(--black);
-    border-right: 2px solid var(--black);
-    padding: 0 10px;
+	border-left: 2px solid var(--black);
+	border-right: 2px solid var(--black);
+	padding: 0 10px;
 }
 
 .tickets .main-info .contact div * {
-    display: inline;
+	display: inline;
 }
 
 .tickets .main-info .contact div i {
-    font-size: 1.2em;
+	font-size: 1.2em;
 }
 
 .tickets .main-info .contact div a {
-    transition: 100ms ease all;
+	transition: 100ms ease all;
 }
 
 .tickets .main-info .contact div:hover > a {
-    text-decoration: underline;
-    color: var(--red);
+	text-decoration: underline;
+	color: var(--red);
 }
 
 .tickets .races {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2%;
-    row-gap: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 2%;
+	row-gap: 20px;
 }
 
 .tickets .races .race-card {
-    flex-basis: 23.5%;
-    position: relative;
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 0 0 6px 6px;
+	flex-basis: 23.5%;
+	position: relative;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 0 0 6px 6px;
 }
 
 .tickets .races .race-card img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
+	width: 100%;
+	height: 160px;
+	object-fit: cover;
 }
 
 .tickets .races .race-card .bottom-info {
-    position: relative;
-    height: 90px;
-    padding: 0 20px;
+	position: relative;
+	height: 90px;
+	padding: 0 20px;
 }
 
 .tickets .races .race-card .country-flag {
-    position: absolute;
-    width: 50px;
-    height: fit-content;
-    top: -20px;
-    left: 20px;
-    object-fit: contain;
-    border-radius: 5px;
-    border: 1px solid var(--light-gray);
-    z-index: 100;
+	position: absolute;
+	width: 50px;
+	height: fit-content;
+	top: -20px;
+	left: 20px;
+	object-fit: contain;
+	border-radius: 5px;
+	border: 1px solid var(--light-gray);
+	z-index: 100;
 }
 
 .tickets .races .race-card .default-card-title {
-    position: relative;
-    top: 20px;
-    /* text-align: center; */
-    display: block;
+	position: relative;
+	top: 20px;
+	/* text-align: center; */
+	display: block;
 }
 
 .tickets .races .race-card .hover-content {
-    box-sizing: border-box;
-    display: none;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    color: var(--white);
-    background-color: var(--black);
-    z-index: 10;
-    border-radius: 0 0 6px 6px;
-    padding: 60px 20px 0 20px;
+	box-sizing: border-box;
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	color: var(--white);
+	background-color: var(--black);
+	z-index: 10;
+	border-radius: 0 0 6px 6px;
+	padding: 60px 20px 0 20px;
 }
 
 .tickets .races .race-card .hover-content * {
-    display: block;
-    margin: 10px 0;
+	display: block;
+	margin: 10px 0;
 }
 
 .tickets .races .race-card .hover-content .information {
-    height: 55px;
+	height: 55px;
 }
 
 .tickets .races .race-card .hover-content .price {
-    height: 45px;
+	height: 45px;
 }
 
 .tickets .races .race-card .hover-content h2 {
-    font-size: 0.9em;
+	font-size: 0.9em;
 }
 
 .tickets .races .race-card .hover-content p {
-    font-size: 0.7em;
+	font-size: 0.7em;
 }
 
 .tickets .races .race-card .hover-content h4 {
-    text-align: center;
+	text-align: center;
 }
 
 .tickets .races .race-card .hover-content strong {
-    display: inline;
+	display: inline;
 }
 
 .tickets .races .race-card .hover-content button {
-    padding: 10px 20px;
-    width: 100%;
-    border-radius: 10px;
-    border: none;
-    background-color: var(--red);
-    color: var(--white);
-    cursor: pointer;
+	padding: 10px 20px;
+	width: 100%;
+	border-radius: 10px;
+	border: none;
+	background-color: var(--red);
+	color: var(--white);
+	cursor: pointer;
 }
 
 .tickets .races .race-card:hover > .hover-content {
-    display: block;
-    pointer-events: all;
+	display: block;
+	pointer-events: all;
 }
 
 .tickets .races .race-card:hover .country-flag {
-    top: -140px;
+	top: -140px;
+}
+
+@media screen and (max-width: 923px) {
+	.tickets .main-info {
+		display: block;
+	}
+
+	.tickets .contact {
+		display: none;
+	}
+
+	.tickets .main-info .data {
+		width: 90%;
+		margin: auto;
+	}
+
+	.tickets .races {
+		flex-direction: column;
+		width: 90%;
+		margin: auto;
+	}
 }
