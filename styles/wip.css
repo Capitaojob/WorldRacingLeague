@@ -2,8 +2,9 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 20px;
-    margin: 250px 0;
+    margin: 250px auto;
 }
 
 .wip div h1 {
@@ -26,4 +27,11 @@
 .wip div img {
     width: 100%;
     object-fit: cover;
+}
+
+@media screen and (max-width: 1300px) {
+    .wip {
+        width: 90%;
+        flex-direction: column;
+    }
 }

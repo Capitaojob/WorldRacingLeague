@@ -122,6 +122,13 @@
     width: 150px;
 }
 
+.ticket-purchase .purchase-title .arrow-right {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
 .ticket-purchase .ticket-form {
     width: calc(100% - 150px);
     height: 100%;
@@ -175,4 +182,59 @@
 .ticket-purchase .ticket-form .form-group input,
 .ticket-purchase .ticket-form .form-group select {
     margin-top: 10px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1350px) {
+    main {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .main-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .race-details {
+        flex-direction: column;
+    }
+
+    .race-details .race-info {
+        flex-direction: row;
+        width: 100%;
+        height: 100px;
+        overflow-x: scroll;
+    }
+
+    .race-details .race-track {
+        height: 300px;
+        width: 100%;
+    }
+
+    .race-details .race-track img {
+        object-fit: contain;
+        width: 100%;
+        margin: auto;
+    }
+
+    .ticket-purchase {
+        overflow-x: scroll;
+        background-color: var(--gray);
+        width: 100%;
+    }
+
+    .ticket-purchase .ticket-form {
+        /* width: 100%; */
+        width: fit-content;
+        border: none;
+        /* padding: 10px 20px; */
+    }
+
+    .ticket-purchase .ticket-form > * {
+        padding: 0 10px;
+        box-sizing: border-box;
+        width: 130px;
+    }
 }

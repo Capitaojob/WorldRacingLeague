@@ -32,3 +32,10 @@ main .content .introduction {
 main .content .introduction h2 {
     margin-top: 0;
 }
+
+@media screen and (max-width: 1327px) {
+    main .content {
+        width: 90%;
+        margin: auto;
+    }
+}

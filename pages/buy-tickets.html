@@ -3,14 +3,15 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Race Schedule 2024 - World Racing League</title>
+        <title>Book Race Tickets - World Racing League</title>
+        <link rel="shortcut icon" href="../assets/images/wrl_logo_small.png" type="image/x-icon" />
         <link rel="stylesheet" href="../styles/reset.css" />
         <link rel="stylesheet" href="../styles/style.css" />
         <link rel="stylesheet" href="../styles/tickets.css" />
         <link rel="stylesheet" href="../styles/buy-tickets.css" />
-        <link rel="shortcut icon" href="../assets/images/wrl_logo_small.png" type="image/x-icon" />
-        <script src="https://kit.fontawesome.com/a6a7a72d34.js" crossorigin="anonymous"></script>
+        <script src="../scripts/script.js" defer></script>
         <script src="../scripts/buy-tickets.js" defer></script>
+        <script src="https://kit.fontawesome.com/a6a7a72d34.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -45,6 +46,7 @@
                         </li>
                     </ul>
                 </nav>
+                <i class="fa-solid fa-bars-staggered fa-2xl mobile-menu-btn" id="mobile-menu-btn"></i>
             </section>
         </header>
         <div class="top-image" alt="Cosmopolis"></div>
@@ -83,6 +85,7 @@
             <section class="ticket-purchase">
                 <div class="purchase-title">
                     <h2>Buy Tickets</h2>
+                    <i class="fa-solid fa-angles-right fa-2xl arrow-right"></i>
                 </div>
                 <form class="ticket-form" id="ticket-form">
                     <div class="form-group">

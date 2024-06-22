@@ -4,8 +4,6 @@
 
     background-image: url("https://i.redd.it/roi6hzsqjtk51.jpg");
 
-    /* Create the parallax scrolling effect */
-    /* background-attachment: fixed; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -189,6 +187,13 @@
 
 .tickets .races .race-card:hover .country-flag {
     top: -140px;
+}
+
+@media screen and (max-width: 1000px) {
+    .top-image {
+        min-height: 150px;
+        height: 30%;
+    }
 }
 
 @media screen and (max-width: 923px) {
