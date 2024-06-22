@@ -1,26 +1,26 @@
-.content h1 {
+main .content h1 {
     text-align: center;
     font-size: 2em;
 }
 
-.content h2 {
+main .content h2 {
     margin-top: 30px;
     font-size: 1.3em;
 }
 
-.content ul li,
-.content p {
+main .content ul li,
+main .content p {
     font-family: var(--secondary-font);
     margin-top: 10px;
     margin-left: 20px;
     text-align: justify;
 }
 
-.content strong {
+main .content strong {
     font-weight: bold;
 }
 
-.content .introduction {
+main .content .introduction {
     padding: 10px;
     box-sizing: border-box;
     margin: 20px auto 30px auto;
@@ -29,6 +29,6 @@
     border-top-right-radius: 20px;
 }
 
-.content .introduction h2 {
+main .content .introduction h2 {
     margin-top: 0;
 }

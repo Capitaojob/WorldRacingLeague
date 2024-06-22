@@ -37,24 +37,20 @@ function getRandomImage() {
     return imageArray[Math.floor(Math.random() * imageArray.length)].src;
 }
 
-// Get images
-fetch("../data/random_imgs.json")
-    .then((response) => response.json())
-    .then((data) => {
-        imageArray = data;
-    })
-    .catch((error) => console.error("Error fetching race data:", error));
+// Fetch images and race data
+Promise.all([
+    fetch("../data/random_imgs.json").then((response) => response.json()),
+    fetch("../data/schedule.json").then((response) => response.json()),
+])
+    .then(([images, races]) => {
+        imageArray = images;
 
-// Fetch and display race cards
-fetch("../data/schedule.json")
-    .then((response) => response.json())
-    .then((data) => {
         const container = document.getElementById("races");
-        data.forEach((race) => {
+        races.forEach((race) => {
             if (!race.ended && race.type !== "defined") {
                 const raceCard = createRaceCard(race);
                 container.appendChild(raceCard);
             }
         });
     })
-    .catch((error) => console.error("Error fetching race data:", error));
+    .catch((error) => console.error("Error fetching data:", error));
